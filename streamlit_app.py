@@ -96,9 +96,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
-try:
+    try:
         main()
     except Exception as e:
         st.error(f"Application error: {str(e)}")
-        st.info("💡 **Troubleshooting tips:**\n- Ensure FFmpeg is installed: `brew install ffmpeg`\n- Try switching TTS Engine to 'gtts'\n- Check that .env file has valid API keys\n- Restart the server: `streamlit run streamlit_app.py --logger.level=debug`"
+        st.info("💡 **Troubleshooting tips:**\n- Ensure FFmpeg is installed: `brew install ffmpeg`\n- Try switching TTS Engine to 'gtts'\n- Check that .env file has valid API keys\n- Restart the server: `streamlit run streamlit_app.py --logger.level=debug`")
