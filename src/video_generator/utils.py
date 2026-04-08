@@ -2,7 +2,6 @@ import json
 import re
 from pathlib import Path
 
-
 def extract_json(text: str) -> dict:
     text = text.strip()
     if text.startswith("```"):
